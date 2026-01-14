@@ -1,7 +1,7 @@
 # 📘 Database Management System (DBMS) – Notes
 
-This repository contains **well-structured notes on Database Management Systems (DBMS)** based on classroom lectures and standard academic concepts.
-The notes are intended for **engineering students**, **exam preparation**, and **quick revision**.
+This repository contains **structured and exam-oriented notes on Database Management Systems (DBMS)** compiled from classroom lectures and standard DBMS concepts.
+These notes are suitable for **engineering students**, **semester exams**, and **quick revision**.
 
 ---
 
@@ -10,9 +10,12 @@ The notes are intended for **engineering students**, **exam preparation**, and *
 * Introduction to DBMS
 * Data → Information → Knowledge → Wisdom
 * Database and DBMS Overview
+* DBMS Architecture
+* Metadata and Data Dictionary
 * DBMS Operations (CRUD)
+* Views
+* Levels of Data Abstraction
 * Applications of DBMS
-* DBMS Software Examples
 * Advantages of DBMS
 * ACID Properties
 
@@ -20,8 +23,8 @@ The notes are intended for **engineering students**, **exam preparation**, and *
 
 ## 🧠 What is DBMS?
 
-A **Database Management System (DBMS)** is software that enables users to **store, manage, retrieve, and manipulate data** efficiently.
-It acts as an interface between the **database** and the **end users/applications**.
+A **Database Management System (DBMS)** is software that allows users to **store, manage, retrieve, and manipulate data** efficiently.
+It provides an interface between **application programs** and the **stored database**.
 
 > DBMS = Data + Database + Management + System
 
@@ -29,42 +32,128 @@ It acts as an interface between the **database** and the **end users/application
 
 ## 📊 Data Hierarchy
 
-The transformation of raw data into decision-making insight follows this hierarchy:
-
-* **Data** – Raw facts and figures
-* **Information** – Processed and meaningful data
-* **Knowledge** – Understanding derived from information
-* **Wisdom** – Ability to make decisions based on knowledge
+* **Data** – Raw facts
+* **Information** – Processed data
+* **Knowledge** – Meaningful understanding
+* **Wisdom** – Decision-making capability
 
 ---
 
 ## 🗄️ Database (DB)
 
-A **database** is an organized collection of related data stored in a structured format, typically using **tables**:
+A **database** is an organized collection of related data stored in a structured format.
 
-* **Rows** → Records
-* **Columns** → Attributes
+* Rows → Records
+* Columns → Attributes
+
+---
+
+## 🏗️ DBMS Architecture
+
+The basic working of DBMS follows this flow:
+
+**User → Application Program → DBMS Software → Database**
+
+### Components:
+
+* **Application Program**
+
+  * Interacts with the user
+* **DBMS Software**
+
+  * Processes queries
+  * Manages stored data
+* **Query Processor**
+
+  * Converts queries into low-level instructions
+* **Storage Manager**
+
+  * Accesses stored data and metadata
+* **Database**
+
+  * Stores actual data
+* **Metadata**
+
+  * Stores data about data
+
+---
+
+## 🧾 Metadata (Data about Data)
+
+**Metadata** describes the structure of the database.
+
+Examples:
+
+* Table names
+* Column names
+* Data types
+* Constraints
+
+Metadata is stored in a **Data Dictionary**.
+
+---
+
+## 📖 Data Dictionary
+
+A **Data Dictionary** is a centralized repository that stores:
+
+* Table definitions
+* Attribute details
+* Constraints
+* Relationships
+
+It is automatically maintained by the DBMS.
 
 ---
 
 ## 🔁 DBMS Operations (CRUD)
 
-DBMS supports basic operations on data:
-
-* **Create (Insert)** – Add new records
-* **Read (Retrieve)** – Access stored data
+* **Insert (Create)** – Add new data
+* **Retrieve (Read)** – Access data
 * **Update** – Modify existing data
 * **Delete** – Remove data
 
-These are commonly known as **CRUD operations**.
+---
+
+## 👁️ Views
+
+A **view** is a virtual table created using a query.
+
+### Features:
+
+* Shows only required data
+* Improves security
+* Simplifies complex queries
+
+Views do **not** store data physically.
+
+---
+
+## 🧩 Levels of Data Abstraction
+
+Data abstraction hides unnecessary details from users and shows only relevant information.
+
+### 1. View Level (External Level)
+
+* What the user sees
+* Different users can have different views
+
+### 2. Logical Level (Conceptual Level)
+
+* What data is stored
+* Describes structure of the database
+* Tables, attributes, relationships
+
+### 3. Physical Level (Internal Level)
+
+* How data is stored
+* File structure, indexing, storage details
 
 ---
 
 ## 🏫 Applications of DBMS
 
-DBMS is used in many real-world systems, including:
-
-* Railway and Airline Reservation Systems
+* Railway / Airline Reservation Systems
 * Libraries
 * Hospitals
 * Universities
@@ -74,7 +163,7 @@ DBMS is used in many real-world systems, including:
 
 ## 💻 Examples of DBMS Software
 
-* **MS Access**
+* MS Access
 * MySQL
 * Oracle
 * PostgreSQL
@@ -84,31 +173,31 @@ DBMS is used in many real-world systems, including:
 
 ## ✅ Advantages of DBMS
 
-* **Reduced Data Redundancy**
-* **Improved Data Consistency**
-* **Easy Data Access**
-* **Enhanced Data Security**
-* **Integrity Constraint Enforcement**
+* Reduced data redundancy
+* Improved data consistency
+* Easy data access
+* Enhanced data security
+* Integrity constraint enforcement
 
 ---
 
 ## 🔐 ACID Properties
 
-ACID properties ensure **reliable and safe database transactions**:
+ACID properties ensure **reliable database transactions**:
 
-* **Atomicity** – Transaction is all-or-nothing
-* **Consistency** – Database remains in a valid state
-* **Isolation** – Concurrent transactions do not affect each other
-* **Durability** – Committed data is permanently saved
+* **Atomicity** – All or nothing
+* **Consistency** – Valid state before and after transaction
+* **Isolation** – Transactions execute independently
+* **Durability** – Data persists after commit
 
 ---
 
 ## 🎯 Purpose of This Repository
 
-* Academic notes storage
-* Quick revision before exams
-* Reference for DBMS fundamentals
-* GitHub-based note management
+* Maintain organized DBMS notes
+* Exam-oriented revision
+* Concept clarity with diagrams
+* Easy access via GitHub
 
 ---
 
@@ -116,3 +205,5 @@ ACID properties ensure **reliable and safe database transactions**:
 
 **Vivek Kumar**
 Engineering Student | Machine Learning Enthusiast
+
+Say the word.
