@@ -6,7 +6,7 @@ These notes are suitable for **engineering students**, **semester exams**, and *
 ---
 
 ## 📌 Contents
-
+ 
 * Introduction to DBMS
 * Data → Information → Knowledge → Wisdom
 * Database and DBMS Overview
